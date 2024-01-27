@@ -10,10 +10,18 @@ body {
   background-color: #f9f9f9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* UNIVERSAL STYLES */
 a {
   text-decoration: none;
   color: #332727;
+}
+
+.hide {
+  display: none !important;
 }
 
 /* HEADER */
@@ -100,6 +108,7 @@ header {
 
 /*ABOUT SECTION*/
 
+/*move first two styles bc they contain contact button as well*/
 #about-home-btn,
 #contact-home-btn {
   cursor: pointer;
@@ -111,6 +120,12 @@ header {
 }
 
 #about-section {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 110;
+  overflow: scroll;
   display: flex;
   background: #f9f9f9;
   padding: 4rem;
@@ -124,7 +139,7 @@ header {
 #about-section h2 {
   font-family: "Newsreader", serif;
   font-size: 2.5rem;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .about-txt-intro {
@@ -193,9 +208,15 @@ header {
 /*CONTACT SECTION*/
 
 #contact-section {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 110;
+  overflow: scroll;
   display: flex;
-  margin-top: 10rem;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
+  padding: 4rem;
 }
 
 #contact-form-section {
@@ -267,7 +288,7 @@ textarea:active {
   height: 15rem;
   background-color: #332727;
   color: #fff;
-  margin-top: 2rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
