@@ -8,7 +8,8 @@
       crossorigin="anonymous"
     ></script>
     <title>mattea-saxell-portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <!--HEADER-->
@@ -17,10 +18,10 @@
       <h1><a id="logo" href="index.html">Mattea Saxell</a></h1>
 
       <nav id="nav-bar">
-        <ul>
+        <ul id="nav-bar-ul">
           <li><a href="#about-section">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
           <li><a href="#contact-section">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
     </header>
@@ -57,7 +58,7 @@
         <a href="" id="cv-link">MY CV</a>
       </div>
       <div class="about-img-section">
-        <img src="images/portfolio-img.jpg" alt="mattea-saxell-portfolio" />
+        <img src="src/images/portfolio-img.jpg" alt="mattea-saxell-portfolio" />
         <a href="#contact-section" id="contact-button">CONTACT ME</a>
       </div>
       <a href="index.html" id="about-home-btn">HOME</a>
@@ -111,6 +112,6 @@
       <span>&copy;/2024</span>
     </div>
 
-    <script src="app.js"></script>
+    <script type="module" src="src/main.ts"></script>
   </body>
 </html>
