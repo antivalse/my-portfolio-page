@@ -183,10 +183,11 @@ header {
 }
 
 #cv-link {
-  margin: 4rem 0 2rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 #contact-button {
+  margin-top: 2 rem;
   width: 40%;
 }
 
