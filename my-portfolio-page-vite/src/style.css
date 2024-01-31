@@ -208,6 +208,10 @@ header {
   width: 45%;
 }
 
+.project-img {
+  width: 200px;
+}
+
 /*CONTACT SECTION*/
 
 #contact-section {
