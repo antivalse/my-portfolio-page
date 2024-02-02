@@ -208,8 +208,13 @@ header {
   width: 45%;
 }
 
-.project-img {
-  width: 200px;
+#project-img-container h4 {
+  margin-bottom: 1rem;
+}
+
+#project-img-container img {
+  width: 80%;
+  border-radius: 0;
 }
 
 /*CONTACT SECTION*/
