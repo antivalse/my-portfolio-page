@@ -12,7 +12,10 @@ const aboutSectionContactBtn =
   document.querySelector<HTMLLinkElement>("#contact-button")!;
 // home link-button in about section
 const aboutSectionHomeBtn =
-  document.querySelector<HTMLButtonElement>("#about-home-btn");
+  document.querySelector<HTMLElement>("#about-home-btn");
+// home link-button in about section
+const contactSectionHomeBtn =
+  document.querySelector<HTMLElement>("#contact-home-btn");
 // cv button in about section
 
 // create function to toggle popup-section windows
@@ -38,10 +41,20 @@ aboutSectionContactBtn.addEventListener("click", (e: MouseEvent) => {
   }
 });
 
-// add eventlistener to home button
+// add eventlistener to home button in about section
 
 aboutSectionHomeBtn?.addEventListener("click", (e: MouseEvent) => {
-  if ((e.target as HTMLElement).innerText === "Home") {
+  if ((e.target as HTMLElement).innerText === "HOME") {
+    console.log("you want to go home!");
     aboutSectionEl.classList.add("hide");
+  }
+});
+
+// add eventlistener to home button
+
+contactSectionHomeBtn?.addEventListener("click", (e: MouseEvent) => {
+  if ((e.target as HTMLElement).innerText === "HOME") {
+    console.log("you want to go home!");
+    contactSectionEl.classList.add("hide");
   }
 });
